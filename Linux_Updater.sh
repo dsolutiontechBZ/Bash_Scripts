@@ -7,8 +7,8 @@
 # 			   and sends the list of packages via Signal API.
 #			   After sending it, it auto proceed with the upgrade.
 #			   After upgrade, it sends a success message.
-#			   If any error occurs in update an error is sent
-# Version: 2.0
+#			   If any error occurs in update an error message is sent
+# Version: 1.0
 # Author: DsolutionTech
 # Contact Email: dsolutiontech@outlook.com
 # Contact Number: +501 615-1855
