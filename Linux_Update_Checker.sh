@@ -5,6 +5,7 @@
 #
 # Description: This script checks for available Linux updates and sends the list of packages via Signal API.
 # Version: 1.0
+# Date: December 11, 2023
 # Author: DsolutionTech
 # Contact Email: dsolutiontech@outlook.com
 # Contact Number: +501 615-1855
