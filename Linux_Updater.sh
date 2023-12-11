@@ -60,8 +60,8 @@ echo -e "Executing script.............."
 
 # Function to send message via Signal API
 send_message() {
-    curl -X POST -H "Content-Type: application/json" 'http://172.20.172.15:8080/v2/send' \
-         -d "{\"message\": \"$1\", \"number\": \"+5016151855\", \"recipients\": [ \"+5016106669\",\"+5016151855\" ]}"
+    curl -X POST -H "Content-Type: application/json" 'http://192.168.20.4:8080/v2/send' \
+         -d "{\"message\": \"$1\", \"number\": \"+5016341888\", \"recipients\": [ \"+5016341888\",\"+5016151855\" ]}"
 }
 
 # Define the variable
