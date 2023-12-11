@@ -8,6 +8,7 @@
 # Author: DsolutionTech
 # Contact Email: dsolutiontech@outlook.com
 # Contact Number: +501 615-1855
+# Facebook: https://www.facebook.com/dsolutiontech/
 ##############################################
 #
 #To schedule the automatic execution of a bash script, you can use the `cron` daemon in Linux. Here's how you can do it:
@@ -39,8 +40,8 @@
 
 # Function to send message via Signal API
 send_message() {
-    curl -X POST -H "Content-Type: application/json" 'http://172.20.172.15:8080/v2/send' \
-         -d "{\"message\": \"$1\", \"number\": \"+5016151855\", \"recipients\": [ \"+5016106669\",\"+5016151855\" ]}"
+    curl -X POST -H "Content-Type: application/json" 'http://192.168.20.4:8080/v2/send' \
+         -d "{\"message\": \"$1\", \"number\": \"+5016151855\", \"recipients\": [ \"+5016341888\",\"+5016151855\" ]}"
 }
 
 # Define the variable
