@@ -93,7 +93,7 @@ if [[ -n "$updates_available" ]]; then
 		sudo apt upgrade -y
 	# Error handler. If an update fails to install, send an error notification
 		if [[ $? -ne 0 ]]; then
-    send_message "Error: $hostname pdates failed to install."
+    send_message "Error: $hostname updates failed to install."
 else
 	# Send a notification when the updates are completed
 	 send_message "$hostname: updates have been installed successfully."
