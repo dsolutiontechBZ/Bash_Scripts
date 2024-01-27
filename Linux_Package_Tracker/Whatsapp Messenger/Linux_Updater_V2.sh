@@ -9,8 +9,8 @@
 #			   After upgrade, it sends a success message.
 #			   If any error occurs in update an error is sent
 # Version: 2.0
-# Date: January 25, 2024
 # Author: DsolutionTech
+# Date: January 25, 2024
 # Contact Email: dsolutiontech@outlook.com
 # Contact Number: +501 615-1855
 # https://github.com/dsolutiontechBZ/Bash_Scripts.git
