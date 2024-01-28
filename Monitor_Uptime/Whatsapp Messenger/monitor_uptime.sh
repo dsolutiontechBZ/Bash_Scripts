@@ -74,8 +74,8 @@ function check_keyword {
 
 
 # Define the API key and chat ID
-API_KEY="7103897494"
-ApiTokenInstance="76009c17a06143e99a6d830bea1040fa549ede4982de46bca3"
+API_KEY="API_KEY HERE"
+ApiTokenInstance="ApiTokenInstance HERE"
 CHAT_ID_1="5016151855@c.us"
 CHAT_ID_2="5016108627@c.us"
 
