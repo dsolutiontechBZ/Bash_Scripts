@@ -1,13 +1,13 @@
 #!/bin/bash
 
 ##############################################
-# Script Name: Linux Update Checker
+# Script Name: Linux Updater
 #
 # Description: This script checks for available Linux updates
 # 			   and sends the list of packages via Signal API.
 #			   After sending it, it auto proceed with the upgrade.
-#			   After upgrade, it sends a success message.
-#			   If any error occurs in update an error is sent
+#			   After the upgrade, it sends a success message.
+#			   If any error occurs in the update an error is sent
 # Version: 2.0
 # Author: DsolutionTech
 # Date: January 25, 2024
@@ -64,7 +64,7 @@ ApiTokenInstance="76009c17a06143e99a6d830bea1040fa549ede4982de46bca3"
 CHAT_ID_1="5016151855@c.us"
 CHAT_ID_2="5016106669@c.us"
 
-# Function to send message via WhatsApp API
+# Function to send messages via WhatsApp API
 send_message() {
     message="$1"
     chat_ids=("${CHAT_ID_1}" "${CHAT_ID_2}")
@@ -114,6 +114,6 @@ else
 fi
 	
 else
-    echo "All Packages Are Up To Date For: $hostname."
-    send_message "*Great job! All Packages Are Up To Date For: $hostname.*"
+    echo "All Packages Are Up To Date For $hostname."
+    send_message "*Great job! All Packages Are Up To Date For $hostname.*"
 fi
