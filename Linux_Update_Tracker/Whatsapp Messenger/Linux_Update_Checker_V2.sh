@@ -3,7 +3,7 @@
 ##############################################
 # Script Name: Linux Update Checker
 #
-# Description: This script checks for available Linux updates and sends the list of packages via Signal API.
+# Description: This script checks for available Linux updates and sends the list of packages via Whatsapp API.
 # Version: 2.0
 # Date: January 25, 2024
 # Author: DsolutionTech
