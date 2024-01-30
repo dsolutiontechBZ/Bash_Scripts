@@ -1,13 +1,13 @@
 #!/bin/bash
 
 ##############################################
-# Script Name: Linux Update Checker
+# Script Name: Linux Updater
 #
 # Description: This script checks for available Linux updates
 # 			   and sends the list of packages via Signal API.
 #			   After sending it, it auto proceed with the upgrade.
-#			   After upgrade, it sends a success message.
-#			   If any error occurs in update an error message is sent
+#			   After the upgrade, it sends a success message.
+#			   If any error occurs in the update an error message is sent
 # Version: 1.0
 # Date: December 11, 2023
 # Author: DsolutionTech
