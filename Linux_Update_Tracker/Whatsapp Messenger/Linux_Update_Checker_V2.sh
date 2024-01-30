@@ -60,7 +60,7 @@ ApiTokenInstance="ApiTokenInstance HERE"
 CHAT_ID_1="5016151855@c.us"
 CHAT_ID_2="5016108627@c.us"
 
-# Function to send message via WhatsApp API
+# Function to send messages via WhatsApp API
 send_message() {
     message="$1"
     chat_ids=("${CHAT_ID_1}" "${CHAT_ID_2}")
@@ -96,6 +96,6 @@ if [[ -n "$updates_available" ]]; then
     # Send the message
     send_message "$message"
 else
-    echo "All Packages Are Up To Date For: $hostname."
-    send_message "Great job! All Packages Are Up To Date For: $hostname."
+    echo "All Packages Are Up To Date For $hostname."
+    send_message "Great job! All Packages Are Up To Date For $hostname."
 fi
