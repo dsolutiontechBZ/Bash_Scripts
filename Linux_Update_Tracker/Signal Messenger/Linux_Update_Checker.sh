@@ -54,7 +54,7 @@ EOF
 header_info
 echo -e "Executing script.............."
 
-# Function to send message via Signal API
+# Function to send messages via Signal API
 send_message() {
     curl -X POST -H "Content-Type: application/json" 'http://192.168.20.4:8080/v2/send' \
          -d "{\"message\": \"$1\", \"number\": \"+5016151855\", \"recipients\": [ \"+5016341888\",\"+5016151855\" ]}"
@@ -81,6 +81,6 @@ if [[ -n "$updates_available" ]]; then
     # Send the message
     send_message "$message"
 else
-    echo "All Packages Are Up To Date For: $hostname."
-    send_message "Great job! All Packages Are Up To Date For: $hostname."
+    echo "All Packages Are Up To Date For $hostname."
+    send_message "Great job! All Packages Are Up To Date For $hostname."
 fi
