@@ -3,9 +3,9 @@
 ##############################################
 # Script Name: Monitor Uptime
 #
-# Description: This script does a contious check on the given URL(s) and KEYWORD(s) every 30 seconds
+# Description: This script does a continuous check on the given URL(s) and KEYWORD(s) every 30 seconds
 #              and store status UP or DOWN along with the date and time in a log file. If the 
-#              status goes to DOWN, then a message is sent. Whenever connection is regain, it will send 
+#              status goes to DOWN, and then a message is sent. Whenever a connection is regained, it will send 
 #              another message informing connection is up.
 # Version: 1.0
 # Date January 27, 2024
@@ -58,7 +58,7 @@ header_info
 echo -e "Executing script.............."
 
 
-# Function to check if keyword is found in HTTP response for given URL
+# Function to check if the keyword is found in the HTTP response for a given URL
 function check_keyword {
   url=$1
   keyword=$2
@@ -79,7 +79,7 @@ ApiTokenInstance="ApiTokenInstance HERE"
 CHAT_ID_1="5016151855@c.us"
 CHAT_ID_2="5016108627@c.us"
 
-# Function to send message via WhatsApp API
+# Function to send messages via WhatsApp API
 send_message() {
     message="$1"
     chat_ids=("${CHAT_ID_1}" "${CHAT_ID_2}")
@@ -108,7 +108,7 @@ get_status_icon() {
 # https://example1.com,keyword1,hostname1
 # https://example2.com,keyword2,hostname2
 
-# Read URLs, keywords, and hostnames from configuration file
+# Read URLs, keywords, and hostnames from the configuration file
 config_file="config.txt"
 urls=()
 keywords=()
@@ -121,14 +121,14 @@ read_config_file() {
     keywords+=($keyword)
     hostnames+=($hostname)
 
-    # Create log file for each URL
+    # Create a log file for each URL
     if [[ ! -f "${hostname}_log.txt" ]]; then
       touch "${hostname}_log.txt"
     fi
   done < "$config_file"
 }
 
-# Get the last status from log file
+# Get the last status from the log file
 get_last_status() {
   log_file=$1
   last_status=$(tail -n 1 "$log_file" | awk '{print $NF}')
@@ -150,7 +150,7 @@ monitor_urls() {
     hostname=${hostnames[i]}
     log_file="${hostname}_log.txt"
     
-    # Check if keyword is found in the HTTP response
+    # Check if the keyword is found in the HTTP response
     if check_keyword "$url" "$keyword"; then
       last_status=$(get_last_status "$log_file")
       if [[ $last_status == "DOWN" ]]; then
