@@ -59,7 +59,7 @@ header_info
 echo -e "Executing script.............."
 
 # Define the API key and chat ID
-API_KEY="7103897494"
+API_KEY="API KEY HERE"
 ApiTokenInstance="TokenInstance Here"
 CHAT_ID_1="50161123455@c.us"
 CHAT_ID_2="5016000201@c.us"
