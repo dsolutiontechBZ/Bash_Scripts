@@ -59,8 +59,8 @@ header_info
 echo -e "Executing script.............."
 
 # Define the API key and chat ID
-API_KEY="Instance_ID"
-ApiTokenInstance="ApiTokenInstance"
+API_KEY="7103897494"
+ApiTokenInstance="76009c17a06143e99a6d830bea1040fa549ede4982de46bca3"
 CHAT_ID_1="5016151855@c.us"
 CHAT_ID_2="5016106669@c.us"
 
@@ -104,6 +104,7 @@ if [[ -n "$updates_available" ]]; then
 	send_message "*$hostname*: Auto-update is enabled. Proceeding with the update process."
 	
 	# Proceed with the updates
+		sudo apt update
 		sudo apt upgrade -y
 	# Error handler. If an update fails to install, send an error notification
 		if [[ $? -ne 0 ]]; then
