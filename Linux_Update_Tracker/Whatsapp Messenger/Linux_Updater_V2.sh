@@ -60,9 +60,9 @@ echo -e "Executing script.............."
 
 # Define the API key and chat ID
 API_KEY="7103897494"
-ApiTokenInstance="76009c17a06143e99a6d830bea1040fa549ede4982de46bca3"
-CHAT_ID_1="5016151855@c.us"
-CHAT_ID_2="5016106669@c.us"
+ApiTokenInstance="TokenInstance Here"
+CHAT_ID_1="50161123455@c.us"
+CHAT_ID_2="5016000201@c.us"
 
 # Function to send messages via WhatsApp API
 send_message() {
